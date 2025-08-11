@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import './products.css';
+/* import './products.css'; */
 import { ProduitType } from '@/app/typage';
 
 // Mappe les catégories pour l'affichage des boutons de filtre

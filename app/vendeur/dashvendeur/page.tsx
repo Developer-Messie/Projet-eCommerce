@@ -2,7 +2,7 @@
 "use client";
 
 import React, { useEffect, useState } from 'react';
-import './Dashvendeur.css';
+/* import './Dashvendeur.css'; */
 import { GrDashboard } from 'react-icons/gr';
 import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation';
