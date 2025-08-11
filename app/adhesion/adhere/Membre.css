@@ -1,0 +1,55 @@
+.membre-section {
+    padding-bottom: 3rem;
+}
+
+.section-title {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.intro-text {
+    max-width: 700px;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.divider {
+    width: 60px;
+    height: 4px;
+    background-color: #0d6efd;
+    /* Bootstrap primary */
+    border: none;
+    margin: 1.5rem auto;
+    border-radius: 4px;
+}
+
+.kits-container {
+    margin-top: 2rem;
+}
+
+.kit-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kit-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.1rem;
+    }
+
+    .intro-text {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+
+    .kit-img {
+        width: 100%;
+    }
+}

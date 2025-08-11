@@ -1,0 +1,98 @@
+/* === STRUCTURE PRINCIPALE === */
+.footer {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    width: 100%;
+    padding: 2rem 1rem;
+}
+
+/* Logo */
+.logo-footer {
+    width: 42%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0 auto 4px auto;
+}
+
+/* Liens */
+.meslinks {
+    text-decoration: none;
+    line-height: 40px;
+    color: #ffffff;
+}
+
+.meslinks:hover {
+    color: #0D9B4D;
+}
+
+/* Réseaux sociaux */
+.social-icons {
+    text-decoration: none;
+    line-height: 40px;
+    color: #0D9B4D;
+}
+
+/* === RESPONSIVE MOBILE ONLY === */
+@media (max-width: 768px) {
+
+    .container,
+    .social-networks,
+    .signature {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center;
+    }
+
+    .logo-footer {
+        width: 100%;
+        max-width: 120px;
+        height: auto;
+        margin: 0 auto 1rem auto;
+    }
+
+    .footer-apropos,
+    .footer-support,
+    .footer-contact {
+        margin-top: 1rem;
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .footer-apropos ul,
+    .footer-support ul,
+    .footer-contact ul {
+        padding: 0;
+    }
+
+    .social-networks {
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .signature {
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center !important;
+        gap: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    .social-networks img {
+        max-width: 120px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .visa img {
+        max-width: 100px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}

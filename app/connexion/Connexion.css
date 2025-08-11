@@ -1,0 +1,464 @@
+/* ===================== */
+/* Global Layout & Reset */
+/* ===================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===================== */
+/* Container principal   */
+/* ===================== */
+.login-container {
+    max-width: 400px;
+    margin: 5vh auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ===================== */
+/* Formulaire            */
+/* ===================== */
+.auth-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* ===================== */
+/* Bouton Connexion      */
+/* ===================== */
+.btn-submit {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 123, 255, 0.4);
+}
+
+/* ===================== */
+/* Lien oublié           */
+/* ===================== */
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* ===================== */
+/* Connexion sociale     */
+/* ===================== */
+.social-login {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.separator {
+    color: #888;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Boutons Sociaux */
+.social-button {
+    flex: 1;
+    padding: 1rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+/* Icônes dans les boutons */
+.social-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+    /* transforme l'icône en blanc */
+}
+
+/* Hover effet */
+.social-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
+}
+
+/* Facebook */
+.facebook {
+    background-color: #3b5998;
+    background-image: linear-gradient(to right, #3b5998, #2d4373);
+}
+
+/* Google */
+.google {
+    background-color: #db4437;
+    background-image: linear-gradient(to right, #db4437, #c23321);
+}
+
+/* ===================== */
+/* Responsive Design     */
+/* ===================== */
+@media (max-width: 480px) {
+    .login-container {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+    }
+
+    .social-button {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+
+/* ================================================= */
+/* ================================================= */
+/* ================================================= */
+
+/* ===================== */
+/* Global Reset & Layout */
+/* ===================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===================== */
+/* Containers            */
+/* ===================== */
+.signup-container,
+.login-container {
+    max-width: 400px;
+    margin: 5vh auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ===================== */
+/* Formulaires           */
+/* ===================== */
+.auth-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* ===================== */
+/* Bouton principal      */
+/* ===================== */
+.btn-submit {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+    margin-top: 1rem;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 123, 255, 0.4);
+}
+
+/* ===================== */
+/* Texte des conditions  */
+/* ===================== */
+.agreement {
+    font-size: 0.85rem;
+    color: #666;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.agreement a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.agreement a:hover {
+    text-decoration: underline;
+}
+
+/* ===================== */
+/* Connexion sociale     */
+/* ===================== */
+.social-login {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.separator {
+    color: #888;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.social-button {
+    flex: 1;
+    padding: 1rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.social-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.95;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+/* Facebook */
+.facebook {
+    background-color: #3b5998;
+    background-image: linear-gradient(to right, #3b5998, #2d4373);
+}
+
+/* Google */
+.google {
+    background-color: #db4437;
+    background-image: linear-gradient(to right, #db4437, #c23321);
+}
+
+/* ===================== */
+/* Responsive            */
+/* ===================== */
+@media (max-width: 480px) {
+
+    .signup-container,
+    .login-container {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+    }
+
+    .social-button {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+/* ===================== */
+/* Amélioration Mobile   */
+/* ===================== */
+@media (max-width: 768px) {
+    .connexion .wrapper {
+        padding: 1rem;
+    }
+
+    .nav-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        width: 100%;
+        margin-bottom: 0.5rem;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .tab-content {
+        width: 100% !important;
+        padding: 0 1rem;
+    }
+
+    .login-container,
+    .signup-container {
+        width: 100%;
+        max-width: 100%;
+        margin: 2rem auto;
+        border-radius: 0;
+        padding: 1.5rem 1rem;
+        box-shadow: none;
+    }
+
+    .form-group input {
+        font-size: 0.95rem;
+        padding: 0.65rem;
+    }
+
+    .btn-submit {
+        font-size: 1rem;
+        padding: 0.85rem;
+    }
+
+    .forgot-password {
+        font-size: 0.85rem;
+        text-align: center;
+        margin-top: 1rem;
+        display: block;
+    }
+
+    .social-login {
+        margin-top: 1.5rem;
+    }
+
+    .separator {
+        font-size: 0.85rem;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+
+    .social-button {
+        width: 100%;
+        justify-content: center;
+        font-size: 0.95rem;
+        padding: 0.85rem;
+    }
+
+    .agreement {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .auth-form h2 {
+        font-size: 1.4rem;
+    }
+
+    .social-icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .btn-submit {
+        font-size: 0.95rem;
+        padding: 0.75rem;
+    }
+
+    .form-group input {
+        padding: 0.6rem;
+    }
+}

@@ -1,0 +1,9 @@
+.delivery {
+    border: 1px solid #0e8e49;
+    box-shadow: #0e8e49;
+    width: 30%;
+}
+
+.del-title {
+    font-weight: 500;
+}

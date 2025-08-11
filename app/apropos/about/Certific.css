@@ -1,0 +1,69 @@
+/* Général */
+
+.certific {
+    margin-bottom: 1rem;
+}
+
+.certific h4 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #c03d3a;
+    /* Une couleur chaude pour le titre */
+}
+
+.certific p {
+    font-size: 1rem;
+    color: #444;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.certific_divider {
+    width: 50%;
+    height: 2px;
+    background-color: #e0e0e0;
+    margin: 20px 0;
+    border: none;
+}
+
+/* Liste des certificats */
+
+.list-cert {
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.certific-item {
+    flex: 1 1 0;
+    margin-bottom: 1rem;
+}
+
+.certific-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+    display: block;
+}
+
+/* Responsive mobile */
+
+@media (max-width: 768px) {
+    .list-cert {
+        flex-direction: column !important;
+        max-width: 100%;
+    }
+
+    .certific-item {
+        margin-bottom: 1.5rem;
+    }
+
+    .certific-item img {
+        width: 100% !important;
+        max-width: 100%;
+    }
+}

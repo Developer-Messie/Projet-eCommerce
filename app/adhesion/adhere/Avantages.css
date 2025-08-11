@@ -1,0 +1,90 @@
+/* Avantages.css */
+.avantages {
+    padding: 2rem 1rem;
+    background-color: #fdfdfd;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.divider {
+    border: none;
+    height: 2px;
+    background-color: #ccc;
+    width: 60%;
+    margin: 1rem auto;
+}
+
+h4 {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+small {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+    text-align: center;
+    display: block;
+}
+
+.li-title {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.highlight-advantage {
+    color: #A74437;
+    font-weight: bold;
+}
+
+.avantages ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.avantages li {
+    margin-bottom: 1.5rem;
+}
+
+.avantages p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+    .col {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .col-left,
+    .col-right {
+        flex: 1;
+    }
+}
+
+@media (max-width: 767px) {
+    .col {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-left,
+    .col-right {
+        width: 100%;
+    }
+
+    .li-title {
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,131 @@
+.contact-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 80vh;
+    background-color: #f0f0f0;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.form-indeed {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-indeed .asteriks {
+    color: #ff0000;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+.form-group button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #0056b3;
+}
+
+.form-indeed {
+    width: 75%;
+    height: 100%;
+}
+
+.form-indeed input,
+.form-indeed textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-indeed input:focus,
+.form-indeed textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.form-indeed textarea {
+    height: 100px;
+}
+
+.form-indeed button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-indeed button:hover {
+    background-color: #0056b3;
+}
+
+.form-indeed h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-indeed p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* .join-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.join-icons a {
+    margin: 0 10px;
+    color: #007bff;
+    text-decoration: none;
+} */

@@ -1,0 +1,10 @@
+.mynavigation {
+    font-family: Roboto, Poppins, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    align-items: center;
+}
+
+.onglets {
+    font-weight: bold;
+    font-size: 14px;
+}

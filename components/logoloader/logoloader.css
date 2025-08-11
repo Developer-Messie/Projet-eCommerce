@@ -1,0 +1,73 @@
+/* components/logoloader.css */
+
+.loaderContainer {
+    display: flex;
+    flex-direction: column;
+    /* Pour centrer le spinner sous le logo */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    /* Pour qu'il couvre toute la page */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    /* Vueport width */
+    height: 100vh;
+    /* Vueport height */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Fond semi-transparent */
+    z-index: 9999;
+    /* Assure-toi qu'il est au-dessus de tout le reste */
+    transition: opacity 0.5s ease-out;
+    /* Pour une transition en douceur à la disparition */
+}
+
+.loaderContainer.hidden {
+    opacity: 0;
+    pointer-events: none;
+    /* Empêche les clics une fois caché */
+}
+
+.logo {
+    /* Tu peux ajouter des styles spécifiques à ton logo ici si tu veux,
+  par exemple une petite animation ou une ombre. */
+    /* animation: bounce 1.5s infinite alternate; */
+    animation: bounce 15s infinite alternate;
+    /* Exemple d'animation */
+}
+
+/* Animation de rebondissement pour le logo */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #0070f3;
+    /* Couleur de ton spinner (Next.js blue par exemple) */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    /* animation: spin 1s linear infinite; */
+    animation: spin 10s linear infinite;
+    /* Animation de rotation */
+    margin-top: 20px;
+    /* Espace entre le logo et le spinner */
+}
+
+/* Animation de rotation pour le spinner */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
